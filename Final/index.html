@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Store</title>
+    <link rel="stylesheet" href="./css/signIn-signUp.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/product-item.css">
+    <link rel="stylesheet" href="./css/product-container.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="app"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+    
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBkMf1PyVILOAbqPtO3I7ZOQ1383jTry2Q",
+            authDomain: "cid12-770dd.firebaseapp.com",
+            projectId: "cid12-770dd",
+            storageBucket: "cid12-770dd.appspot.com",
+            messagingSenderId: "85873809863",
+            appId: "1:85873809863:web:44a34d965309a5759fa1e2"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="index.js" type="module"></script>
+    
+</html>

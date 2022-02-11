@@ -1,0 +1,315 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
+}
+@font-face {
+  src: url(../fonts/Oswald-Medium.ttf);
+  font-family: Oswald-Medium;
+}
+.login-title {
+  font-family: Oswald-Medium;
+  font-size: 30px;
+  color: #43383e;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  padding-bottom: 40px;
+}
+.btn-login-with {
+  font-family: Oswald-Medium;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.btn-login-with:hover {
+  background-color: #333333;
+  transition: 250ms linear;
+}
+.facebook-bg {
+  background-color: #3c5997;
+}
+.twitter-bg {
+  background-color: #1da1f1;
+}
+.google-bg {
+  background-color: #eb4034;
+}
+.fa {
+  margin-right: 8px;
+}
+.login-email-title {
+  font-family: Oswald-Medium;
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.2;
+  margin: 55px 0 35px 0;
+}
+.login-container {
+  min-width: 320px;
+  background: transparent;
+  border-radius: 0px;
+}
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+.h-screen {
+  height: 100vh;
+}
+.input-group {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 31px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 16px;
+}
+
+.input-group input {
+  font-family: Oswald-Medium;
+  font-size: 16px;
+  color: #43383e;
+  line-height: 1.2;
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 62px;
+  background: #fff;
+  border-radius: 31px;
+  padding: 0 35px 0 35px;
+  outline: none;
+  border: none;
+}
+.focus-input {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #fff;
+  pointer-events: none;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.input-group input:focus + .focus-input {
+  width: calc(100% + 20px);
+}
+.txt {
+  font-family: Oswald-Medium;
+  font-size: 16px;
+  color: #999999;
+  line-height: 1.4;
+  margin-top: 100px;
+  margin-bottom: 5px;
+}
+.btn-link {
+  font-family: Oswald-Medium;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #333;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+.btn-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 62px;
+  background-color: #333;
+  border-radius: 31px;
+  font-family: Oswald-Medium;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 1;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+.btn-submit::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #333333;
+  pointer-events: none;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.btn-submit:hover:before {
+  width: calc(100% + 20px);
+}
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+.has-error .btn-show-pass {
+  visibility: hidden;
+}
+.input-group {
+  position: relative;
+}
+.has-error::before {
+  content: attr(data-validate);
+  position: absolute;
+  z-index: 1000;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 14px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 10px;
+  pointer-events: none;
+
+  font-family: Oswald-Medium;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.has-error::after {
+  content: "\f06a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  z-index: 1100;
+  color: #c80000;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 16px;
+}
+
+.has-error:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .has-error::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/*---------------------------------------------*/
+.btn-show-pass {
+  font-size: 15px;
+  color: #aaaaaa;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 200;
+  height: 100%;
+  top: 0;
+  right: 25px;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: background 0.4s;
+}
+
+.btn-show-pass:hover {
+  color: #111111;
+}
+
+.btn-show-pass.active {
+  color: #111111;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Responsive ]*/
+@media (max-width: 576px) {
+  .login-container {
+    padding-top: 20px;
+  }
+}
+
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px) {
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px) {
+}
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 320px) {
+}
+/*Smart phone nhỏ*/
+@media screen and (max-width: 240px) {
+}

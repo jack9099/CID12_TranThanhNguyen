@@ -1,0 +1,89 @@
+* {
+  all: revert;
+  font-family: Nunito-Sans;
+}
+
+@font-face {
+  src: url(../fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+  font-family: Nunito-Sans;
+}
+
+header {
+  background: #fff;
+  width: 100vw;
+  margin-bottom: 100px;
+}
+.header-top {
+  background: #111111;
+  padding: 10px 0;
+}
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+.header-top-container {
+  color: #ffffff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.header-bot-container {
+  height: 100px;
+  width: 1200px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sign-up-btn {
+  color: #ffffff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 28px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background-color: #111111;
+  padding: 0;
+}
+.logo {
+  font-size: 32px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 60px;
+  cursor: pointer;
+}
+.btn {
+  font-size: 24px;
+  color: #111111;
+  display: block;
+  font-weight: 400;
+  position: relative;
+  padding: 3px 0;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  margin-right: 30px;
+}
+.btn:hover {
+  border-bottom: 3px solid red;
+  transition: all, 0.1s;
+}
+.logout-btn {
+  color: #ffffff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 28px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background-color: #111111;
+  padding: 0;
+}

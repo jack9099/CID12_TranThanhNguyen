@@ -1,0 +1,40 @@
+* {
+  all: revert;
+  font-family: Nunito-Sans;
+}
+
+@font-face {
+  src: url(../fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+  font-family: Nunito-Sans;
+}
+.product-item {
+  width: 330px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+.product-item:hover {
+  opacity: 0.8;
+}
+.pic-link {
+  width: 330px;
+  height: 260px;
+  position: relative;
+}
+.name {
+  margin-top: 30px;
+  color: #111111;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+.price {
+  color: #0d0d0d;
+  font-size: 22px;
+  font-weight: 900;
+  margin-left: 15px;
+}

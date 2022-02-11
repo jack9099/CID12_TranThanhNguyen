@@ -1,0 +1,17 @@
+* {
+  all: revert;
+  font-family: Nunito-Sans;
+}
+
+@font-face {
+  src: url(../fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+  font-family: Nunito-Sans;
+}
+
+.product-container {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 250px;
+  margin-right: 200px;
+}
